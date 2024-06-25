@@ -266,6 +266,7 @@ body.dark-mode {
     cursor: pointer;
     margin: 23px 0;
     caret-color: #007bff;
+    
 }
 .light-mode input[type=search]:hover{
     width: 70%;
@@ -489,11 +490,12 @@ details summary {
     font-size: 1.09em;
     color: #007bff;
     text-transform: uppercase;
+    text-decoration: underline;
+    text-underline-offset: 1rem; /*gap betwwen text and underline*/
+    text-decoration-color: #fdd835;
 
 }
-details summary:hover{
-    text-decoration: underline #fdd835;
-}
+
 
 details p {
     margin-left: 20px;
@@ -508,8 +510,24 @@ details p a:hover{
     /* text-decoration: underl */
     color: #007bff;
     font-weight: 600;
+    text-decoration: underline;
+  text-underline-offset: 0.5rem; /*gap betwwen text and underline*/
+  text-decoration-color: rgb(181, 181, 181);
+  
+
 
 }
+.dark-mode  p a{
+    color: #f8f8f8;
+    
+}
+.dark-mode p a:hover{
+    color: gray;
+  text-decoration: underline;
+  text-underline-offset: 0.5rem; /*gap betwwen text and underline*/
+  text-decoration-color: rgb(181, 181, 181);
+}
+
 h2 {
     margin-top: 30px;
     font-size: 1.04rem; 
@@ -572,14 +590,16 @@ strong {
     text-decoration: none;
 }
 .topp li a:hover{
-    color: grey;
+    color:#007bff;
     opacity: 1;
-    text-decoration: underline;
+   
    
 }
 .bottom li a:hover{
     color: grey ;
     text-decoration: underline;
+    text-underline-offset: 0.5rem; /*gap betwwen text and underline*/
+    text-decoration-color: rgb(181, 181, 181);
 }
 /* .dark-mode .top li a:hover{
     
@@ -601,7 +621,9 @@ label {
     width: 100%; /* Adjusted width for better fit on smaller screens */
     height: 40px;
     cursor: pointer;
+    
 }
+
 
 button[type=submit] {
     padding: 10px 20px;
